@@ -1,4 +1,3 @@
--- lua/custom/lsp/codelens.lua
 vim.api.nvim_create_autocmd('LspAttach', {
   callback = function(args)
     local buf = args.buf
