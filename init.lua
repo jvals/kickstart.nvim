@@ -688,6 +688,25 @@ require('lazy').setup({
         -- But for many setups, the LSP (`ts_ls`) will work just fine
         -- ts_ls = {},
         --
+--         hls = {
+--   cmd = { vim.fn.expand("~/.ghcup/bin/haskell-language-server-wrapper"), "--lsp" },
+--   filetypes = { "haskell", "lhaskell", "cabal" },
+--   root_dir = function(fname)
+--     local util = require("lspconfig.util")
+--     return util.root_pattern("hie.yaml", "cabal.project", "stack.yaml", "*.cabal", "package.yaml", ".git")(fname)
+--       or util.path.dirname(fname)
+--   end,
+--   settings = {
+--     haskell = {
+--       formattingProvider = "ormolu",
+--       cabalFormattingProvider = "cabalfmt",
+--       plugin = {
+--         ["ghcide-code-actions-type-signatures"] = { globalOn = true },
+--         ["ghcide-type-lenses"] = { globalOn = true, config = { mode = "always" } },
+--       },
+--     },
+--   },
+-- },
 
         lua_ls = {
           -- cmd = { ... },
